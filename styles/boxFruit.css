@@ -1,0 +1,22 @@
+:root {
+    --box-Color : red;
+    --box-content-color: #001423;
+}
+
+.contentFruit-box-1, .contentFruit-box-2, .contentFruit-box-3, .contentFruit-box-4 {
+    width: 100px;
+    height: 100px;
+}
+
+
+.reponce.text.red {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: -10%;
+    left: 7%;
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+    font-size: 5em;
+}

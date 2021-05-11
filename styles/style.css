@@ -1,0 +1,124 @@
+:root {
+    --Width-box-expression: 50%;
+    --Height-box-expression : 20%;
+
+    --Width-box-score : 60%;
+    --Height-box-score : 20%;
+    
+    --Width-box-jeu: 500px;
+    --Height-box-jeu: 500px;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("/home/thenewjesspro/Desktop/Travaille-Jour/Game-Ecole/img/background.png");
+}
+
+#contentBox {
+    display: grid;
+    grid-template-rows: 80px 10px var(--Height-box-jeu) 1fr;
+
+}
+.header.center{
+    font-size: 2em;
+    line-height: 1.7em;
+    justify-content: space-around;
+}
+#footer {
+    /* color: green; */
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+#mainContaint {
+    display: grid;
+    grid-template-columns: 1fr var(--Width-box-jeu) 1fr;
+    position: relative;
+}
+
+
+#expression {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    width: var(--Width-box-expression);
+    height: var(--Height-box-expression);
+    
+    border: 12px solid #6D5720;
+    border-radius: 12px;
+    background: #b0844b;
+
+    position: relative;
+    top : 40% ;
+    left: 20%;
+}
+
+#zoneGame {
+    border: 12px solid #6D5720;
+    border-radius: 12px;
+    background: #b0844b;
+    grid-template-columns: repeat(5, 1fr);
+    width: var(--Width-box-jeu);
+    height: var(--Height-box-jeu);
+}
+#zoneGame>*{
+    border: solid solid;
+}
+#zonneScore {
+    width: var(--Width-box-score);
+    height: var(--Height-box-score);
+    border: 12px solid #6D5720;
+    border-radius: 12px;
+    background: #b0844b;
+    position: relative;
+    top : 40% ;
+    left: 20%;
+}
+
+.text {
+    font-family: 'Carter One', sans-serif;
+    letter-spacing: .1em;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #fff !important;
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+.green {
+        text-shadow: 2px 2px 1px #348628, -2px 2px 1px #348628, 2px -2px 1px #348628, -2px -2px 1px #348628, 0px 2px 1px #348628, 0px -2px 1px #348628, 0px 4px 1px #1d4c16, 2px 4px 1px #1d4c16, -2px 4px 1px #1d4c16;
+
+}
+.red {
+    text-shadow: 2px 2px 1px #d72d21, -2px 2px 1px #d72d21, 2px -2px 1px #d72d21, -2px -2px 1px #d72d21, 0px 2px 1px #d72d21, 0px -2px 1px #d72d21, 0px 4px 1px #930704, 2px 4px 1px #930704, -2px 4px 1px #930704;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    background-image: url("file:///home/thenewjesspro/Desktop/Travaille-Jour/Game-Ecole/img/images.jpeg");
+}
+.timer {
+    position: absolute;
+    left: 40%;
+    font-size: 10em;
+    top: 20%;
+}
+
+/* REQUESTFULLSCREN */
+:not(:root):fullscreen::backdrop {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: var(--Background-Color);
+}

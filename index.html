@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-calculation-Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/player.css">
+    <link rel="stylesheet" href="styles/player-animate.css">
+    <link rel="stylesheet" href="styles/boxFruit.css">
+    <link rel="stylesheet" href="styles/button.css">
+
+    <script>
+        const WIDTH = window.innerWidth;
+        const HEIGHT = window.innerHeight;
+        const NPOINT = 4;
+        const WIDTHFRUIT = 10;
+        const HEIGHTFRUIT = 10;
+    </script>
+</head>
+<body onload="init()">
+    
+    <div id="contentBox">
+
+      <div id="header" class="center">
+        <div class="header center text green"> Quick calculation Game </div>
+        <div>
+            <button id="start" class="game-button green"> Start </button>
+            <button id="restart" class="game-button">Restart</button>
+            <button id="fullScreen" class="game-button red">FullScreen</button>
+            <button id="exit" class="game-button green">Exit</button>
+        </div>
+      </div>
+      <div></div>
+      <div id="mainContaint">
+        <div id="boxExpression">
+          
+          <div id="expression" class="center green text " >
+            
+         </div>
+        </div>
+        <div id="animation-Player">
+          <div class="penguin">
+            <div class="penguin-bottom">
+              <div class="right-hand"></div>
+              <div class="left-hand"></div>
+              <div class="right-feet"></div>
+              <div class="left-feet"></div>
+            </div>
+            <div class="penguin-top">
+              <div class="right-cheek"></div>
+              <div class="left-cheek"></div>
+              <div class="belly"></div>
+              <div class="right-eye">
+                <div class="sparkle"></div>
+              </div>
+              <div class="left-eye">
+                <div class="sparkle"></div>
+              </div>
+              <div class="blush-right"></div>
+              <div class="blush-left"></div>
+              <div class="beak-top"></div>
+              <div class="beak-bottom"></div>
+            </div>
+          </div>
+        </div>
+        <div id = "zoneGame">
+
+          
+
+          <div id="pengui-box">
+            <div id="penguin">
+              <div class="penguin-bottom">
+                <div class="right-hand"></div>
+                <div class="left-hand"></div>
+                <div class="right-feet"></div>
+                <div class="left-feet"></div>
+              </div>
+              <div class="penguin-top">
+                <div class="right-cheek"></div>
+                <div class="left-cheek"></div>
+                <div class="belly"></div>
+                <div class="right-eye">
+                  <div class="sparkle"></div>
+                </div>
+                <div class="left-eye">
+                  <div class="sparkle"></div>
+                </div>
+                <div class="blush-right"></div>
+                <div class="blush-left"></div>
+                <div class="beak-top"></div>
+                <div class="beak-bottom"></div>
+              </div>
+
+            </div>
+          
+          </div>
+            
+        </div>
+        <div id="zonneScore" class="center text green ">
+            <span > Score : <span id="score">  </span> </span>
+        </div>
+      </div>
+      <div id="footer" class="center text green">
+        <small>&copy; Copyright 2021, Jessy APP Production</small>
+      </div>
+    </div>
+
+    <script src="scripts/content-box.js"> </script>
+</body>
+</html>
